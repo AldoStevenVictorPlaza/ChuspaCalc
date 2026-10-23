@@ -1,6 +1,6 @@
-# Cómo agregar un nuevo módulo a Escuadra
+# Cómo agregar un nuevo módulo a ChuspaCalc
 
-Esta guía explica cómo crear e integrar una nueva herramienta dentro del proyecto Escuadra.
+Esta guía explica cómo crear e integrar una nueva herramienta dentro del proyecto ChuspaCalc.
 
 El objetivo es mantener una estructura clara, consistente y fácil de mantener para todos los contribuidores.
 
@@ -67,7 +67,7 @@ Esto permite que Python reconozca el directorio como un paquete.
 
 El archivo debe crearse dentro del dominio correspondiente y tener un nombre descriptivo usando `snake_case`.
 
-Las herramientas descubiertas automáticamente por Escuadra deben utilizar el prefijo `herramienta_`.
+Las herramientas descubiertas automáticamente por ChuspaCalc deben utilizar el prefijo `herramienta_`.
 
 Ejemplos válidos:
 

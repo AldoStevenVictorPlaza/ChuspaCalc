@@ -11,7 +11,7 @@ La carga se realiza mediante la función `load(path)`, la cual recibe la ruta de
 Ejemplo:
 
 ```python
-from escuadra.config.loader import load
+from ChuspaCalc.config.loader import load
 
 config = load("config.yaml")
 ```

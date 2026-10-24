@@ -1,6 +1,6 @@
 # Configuración de ChuspaCalc
 
-Esta guía describe cómo cargar y utilizar archivos de configuración en ChuspaCalc mediante el módulo `src/escuadra/config/loader.py`.
+Esta guía describe cómo cargar y utilizar archivos de configuración en ChuspaCalc mediante el módulo `src/ChuspaCalc/config/loader.py`.
 
 ## Archivo de configuración
 

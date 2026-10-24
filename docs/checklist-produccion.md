@@ -27,7 +27,7 @@ antes de llegar a los estudiantes.
 ## 3. Catálogo de herramientas
 
 - [ ] ¿El archivo `docs/herramientas.md` lista todas las herramientas actualmente implementadas?
-- [ ] ¿Cada herramienta en el catálogo corresponde a un módulo real en `src/escuadra/modulos/`?
+- [ ] ¿Cada herramienta en el catálogo corresponde a un módulo real en `src/chuspacalc/modulos/`?
 - [ ] ¿Se eliminaron del catálogo las herramientas planificadas que aún no existen?
 - [ ] ¿La descripción de cada herramienta es clara para un estudiante sin experiencia previa?
 
@@ -48,7 +48,7 @@ antes de llegar a los estudiantes.
 
 - [ ] ¿La versión en `pyproject.toml` fue incrementada correctamente?
 - [ ] ¿`CHANGELOG.md` refleja los cambios de esta versión?
-- [ ] ¿Si se publica en PyPI, se probó la instalación con `pip install escuadra` desde un entorno limpio?
+- [ ] ¿Si se publica en PyPI, se probó la instalación con `pip install chuspacalc` desde un entorno limpio?
 - [ ] ¿Se generó un tag de versión en git correspondiente al release?
 
 ## 7. Validación final con usuarios reales

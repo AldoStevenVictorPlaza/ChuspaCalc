@@ -1,9 +1,9 @@
 from PySide6.QtWidgets import QWidget
 
-from escuadra.core.carrera import Carrera
-from escuadra.core.herramienta import Herramienta
+from ChuspaCalc.core.carrera import Carrera
+from ChuspaCalc.core.herramienta import Herramienta
 
-from escuadra.modulos.matematicas.numeros_complejos import (
+from ChuspaCalc.modulos.matematicas.numeros_complejos import (
     sumar,
     restar,
     multiplicar,

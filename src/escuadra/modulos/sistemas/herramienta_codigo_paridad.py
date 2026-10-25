@@ -1,6 +1,6 @@
 """Wrapper de herramienta para cálculo y verificación de paridad."""
 
-from escuadra.modulos.sistemas.codigo_paridad import (
+from Escuadra.modulos.sistemas.codigo_paridad import (
     calcular_bit_paridad,
     verificar_paridad,
 )

@@ -10,7 +10,7 @@ import logging
 import pkgutil
 
 import ChuspaCalc.modulos as _modulos_pkg
-from escuaChuspaCalcdra.core.carrera import Carrera
+from ChuspaCalc.core.carrera import Carrera
 from ChuspaCalc.core.herramienta import Herramienta
 
 logger = logging.getLogger(__name__)

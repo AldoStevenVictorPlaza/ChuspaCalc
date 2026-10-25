@@ -1,7 +1,7 @@
 """
-Registry de herramientas de Escuadra.
+Registry de herramientas de ChuspaCalc.
 Descubre automáticamente todas las clases que heredan de Herramienta
-dentro del paquete escuadra.modulos.
+dentro del paquete ChuspaCalc.modulos.
 """
 
 import importlib
@@ -9,9 +9,9 @@ import inspect
 import logging
 import pkgutil
 
-import escuadra.modulos as _modulos_pkg
-from escuadra.core.carrera import Carrera
-from escuadra.core.herramienta import Herramienta
+import ChuspaCalc.modulos as _modulos_pkg
+from ChuspaCalc.core.carrera import Carrera
+from ChuspaCalc.core.herramienta import Herramienta
 
 logger = logging.getLogger(__name__)
 
@@ -20,7 +20,7 @@ _cache: list[type[Herramienta]] | None = None
 
 def descubrir_herramientas() -> list[type[Herramienta]]:
     """
-    Recorre el paquete escuadra.modulos e importa todos los módulos
+    Recorre el paquete ChuspaCalc.modulos e importa todos los módulos
     cuyo nombre comience con 'herramienta_'. Devuelve una lista con
     todas las clases encontradas que heredan de Herramienta.
 

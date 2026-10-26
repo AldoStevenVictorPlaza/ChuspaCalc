@@ -1,5 +1,5 @@
 """
-Modulo para el dialogo 'Acerca de' de la aplicación Escuadra.
+Modulo para el dialogo 'Acerca de' de la aplicación ChuspaCalc.
 
 Expone la función `mostrar_acerca_de` que muestra un dialogo modal
 con informacion del proyecto: nombre, versión, licencia y créditos.
@@ -11,7 +11,7 @@ from PySide6.QtWidgets import QMessageBox, QWidget
 
 
 def mostrar_acerca_de(parent: QWidget | None = None) -> None:
-    """Muestra el dialogo 'Acerca de Escuadra'.
+    """Muestra el dialogo 'Acerca de ChuspaCalc'.
 
     Presenta informacion general del proyecto: nombre, version,
     descripción, licencia y créditos institucionales. El dialogo
@@ -22,12 +22,12 @@ def mostrar_acerca_de(parent: QWidget | None = None) -> None:
                 Si es ``None``, el dialogo se muestra sin padre.
     """
     try:
-        from escuadra import __version__ as version
+        from ChuspaCalc import __version__ as version
     except (ImportError, AttributeError):
         version = "0.1.0"
 
     texto = (
-        "<b>Escuadra</b><br>"
+        "<b>ChuspaCalc</b><br>"
         f"Versión: {version}<br><br>"
         "Suite de herramientas de cálculo para distintas carreras "
         "de ingeniería.<br><br>"
@@ -39,4 +39,4 @@ def mostrar_acerca_de(parent: QWidget | None = None) -> None:
         "Universidad Técnica de Oruro."
     )
 
-    QMessageBox.about(parent, "Acerca de Escuadra", texto)
+    QMessageBox.about(parent, "Acerca de ChuspaCalc", texto)

@@ -1,14 +1,14 @@
 """
-Constructor dinámico de menú para Escuadra.
+Constructor dinámico de menú para ChuspaCalc.
 Conecta el registry de herramientas con los menús de la ventana principal.
 """
 
 from PySide6.QtGui import QAction
 from PySide6.QtWidgets import QMenu
 
-from escuadra.core.carrera import Carrera
-from escuadra.core.herramienta import Herramienta
-from escuadra.ui.ventana_principal import VentanaPrincipal
+from ChuspaCalc.core.carrera import Carrera
+from ChuspaCalc.core.herramienta import Herramienta
+from ChuspaCalc.ui.ventana_principal import VentanaPrincipal
 
 
 def construir_menu(

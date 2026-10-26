@@ -15,7 +15,13 @@ def comparar_resultados(resultado1, resultado2, tolerancia=1e-6):
 
     Returns:
         dict: Resultado de la comparación con detalle.
+
+    Raises:
+        ValueError: Si la tolerancia es negativa.
     """
+
+    if tolerancia < 0:
+        raise ValueError("La tolerancia no puede ser negativa.")
 
     diferencia = abs(resultado1 - resultado2)
 

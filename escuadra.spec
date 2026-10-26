@@ -3,7 +3,7 @@
 block_cipher = None
 
 a = Analysis(
-    ['src/escuadra/app.py'],
+    ['src/ChuspaCalc/app.py'],
     pathex=[],
     binaries=[],
     datas=[],
@@ -11,7 +11,7 @@ a = Analysis(
         'PySide6.QtWidgets',
         'PySide6.QtCore',
         'PySide6.QtGui',
-        'escuadra.modulos',
+        'ChuspaCalc.modulos',
     ],
     hookspath=[],
     hooksconfig={},
@@ -32,7 +32,7 @@ exe = EXE(
     a.zipfiles,
     a.datas,
     [],
-    name='escuadra',
+    name='ChuspaCalc',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,

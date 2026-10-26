@@ -14,8 +14,24 @@ def resolver_sistema(A: list[list[float]], b: list[float]) -> list[float] | None
 
     Returns:
         Lista con la solución x, o None si el sistema es singular.
+
+    Raises:
+        ValueError: Si A está vacía, si A no es cuadrada o si b no tiene
+            el mismo tamaño que A.
     """
+    if not A:
+        raise ValueError("La matriz A no puede estar vacía.")
+
     n = len(A)
+
+    for fila in A:
+        if len(fila) != n:
+            raise ValueError(
+                f"La matriz A debe ser cuadrada: se esperaban filas de tamaño {n}."
+            )
+
+    if len(b) != n:
+        raise ValueError(f"El vector de términos independientes debe tener tamaño {n}.")
 
     # Crear copia aumentada [A|b] para no modificar los originales
     M = [A[i][:] + [b[i]] for i in range(n)]

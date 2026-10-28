@@ -2,7 +2,7 @@ import math
 
 import pytest
 
-from escuadra.math.stats import (
+from ChuspaCalc.math.stats import (
     calcular_desviacion_estandar,
     calcular_media,
     calcular_mediana,

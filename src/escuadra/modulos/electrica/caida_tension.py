@@ -28,6 +28,7 @@ def calcular_caida(
     corriente: float,
     seccion: float,
     material: str = "cobre",
+    tension: float = TENSION_REFERENCIA_V,
 ) -> dict[str, float | bool]:
     """Calcula la caida de tension en un conductor electrico.
 
@@ -40,14 +41,17 @@ def calcular_caida(
         seccion:   Seccion transversal del conductor en mm2. Debe ser > 0.
         material:  Material del conductor. Valores aceptados: ``'cobre'``
                    (por defecto) y ``'aluminio'``.
+        tension:   Tension nominal de referencia en voltios (V). Debe ser > 0.
+                   Por defecto 220.0.
 
     Returns:
         Diccionario con los siguientes campos:
 
         * ``caida_v``    - Caida de tension en voltios (float).
         * ``porcentaje`` - Caida expresada como porcentaje respecto a
-                           220 V (float).
+                           ``tension`` (float).
         * ``admisible``  - ``True`` si el porcentaje es <= 3 % (bool).
+        * ``tension_v``  - Tension de referencia utilizada, en voltios (float).
 
     Raises:
         ValueError: Si ``material`` no esta entre los reconocidos.
@@ -55,7 +59,7 @@ def calcular_caida(
 
     Examples:
         >>> calcular_caida(longitud=100, corriente=15, seccion=4)
-        {'caida_v': 12.9, 'porcentaje': 5.8636, 'admisible': False}
+        {'caida_v': 12.9, 'porcentaje': 5.8636, 'admisible': False, 'tension_v': 220.0}
     """
     # Validar material
     material_lower = material.lower()
@@ -67,7 +71,12 @@ def calcular_caida(
         )
 
     # Validar parametros positivos
-    parametros = {"longitud": longitud, "corriente": corriente, "seccion": seccion}
+    parametros = {
+        "longitud": longitud,
+        "corriente": corriente,
+        "seccion": seccion,
+        "tension": tension,
+    }
     for nombre, valor in parametros.items():
         if valor <= 0:
             raise ValueError(
@@ -76,11 +85,12 @@ def calcular_caida(
 
     resistividad = RESISTIVIDADES[material_lower]
     caida_v = 2 * resistividad * longitud * corriente / seccion
-    porcentaje = (caida_v / TENSION_REFERENCIA_V) * 100
+    porcentaje = (caida_v / tension) * 100
     admisible = porcentaje <= PORCENTAJE_ADMISIBLE
 
     return {
         "caida_v": round(caida_v, 4),
         "porcentaje": round(porcentaje, 4),
         "admisible": admisible,
+        "tension_v": tension,
     }

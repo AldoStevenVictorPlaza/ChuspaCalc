@@ -37,3 +37,20 @@ def perimetro_hexagono_regular(lado):
         raise ValueError("El lado debe ser mayor que cero")
 
     return 6 * lado
+
+
+def perimetro_poligono_regular(n_lados: int, longitud_lado: float):
+    if n_lados < 3:
+        raise ValueError("El polígono debe tener al menos 3 lados")
+
+    if longitud_lado <= 0:
+        raise ValueError("El lado debe ser mayor que cero")
+
+    return n_lados * longitud_lado
+
+
+def perimetro_trapecio(lado_a: float, lado_b: float, lado_c: float, lado_d: float):
+    if lado_a <= 0 or lado_b <= 0 or lado_c <= 0 or lado_d <= 0:
+        raise ValueError("Los lados deben ser mayores que cero")
+
+    return lado_a + lado_b + lado_c + lado_d

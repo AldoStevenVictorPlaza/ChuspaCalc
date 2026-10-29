@@ -87,3 +87,49 @@ def _validar_dimensiones(a: list[list[float]], b: list[list[float]]) -> None:
         raise ValueError(
             f"Dimensiones incompatibles: {len(a)}x{len(a[0])} y {len(b)}x{len(b[0])}"
         )
+
+
+def transponer(a: list[list[float]]) -> list[list[float]]:
+    """
+    Calcula la transpuesta de una matriz.
+
+    Args:
+        a: Matriz de dimensiones m x n.
+
+    Returns:
+        Nueva matriz de dimensiones n x m con filas y columnas intercambiadas.
+
+    Raises:
+        ValueError: Si la matriz está vacía o sus filas no tienen todas
+            la misma longitud.
+
+    Examples:
+        >>> transponer([[1, 2, 3], [4, 5, 6]])
+        [[1, 4], [2, 5], [3, 6]]
+    """
+    if not a:
+        raise ValueError("No se puede transponer una matriz vacía.")
+
+    columnas = len(a[0])
+    if any(len(fila) != columnas for fila in a):
+        raise ValueError("Todas las filas deben tener la misma longitud.")
+
+    return [[a[i][j] for i in range(len(a))] for j in range(columnas)]
+
+
+def multiplicar_escalar(a: list[list[float]], escalar: float) -> list[list[float]]:
+    """
+    Multiplica cada elemento de una matriz por un escalar.
+
+    Args:
+        a: Matriz de entrada.
+        escalar: Valor por el que se multiplica cada elemento.
+
+    Returns:
+        Nueva matriz con cada elemento multiplicado por ``escalar``.
+
+    Examples:
+        >>> multiplicar_escalar([[1.0, -2.0], [3.0, 4.0]], 2.5)
+        [[2.5, -5.0], [7.5, 10.0]]
+    """
+    return [[elemento * escalar for elemento in fila] for fila in a]

@@ -6,12 +6,12 @@ Este documento recopila errores frecuentes encontrados por estudiantes al trabaj
 
 ---
 
-## 1. ModuleNotFoundError al importar ChuspaCalc
+## 1. ModuleNotFoundError al importar el paquete del proyecto
 
 ### Síntoma
 
 ```bash
-ModuleNotFoundError: No module named 'chuspacalc'
+ModuleNotFoundError: No module named '<nombre_del_paquete>'
 ```
 
 ### Causa

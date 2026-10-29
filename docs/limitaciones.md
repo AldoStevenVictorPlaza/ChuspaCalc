@@ -1,8 +1,8 @@
-# Limitaciones de Escuadra - Versión Inicial (v1)
+# Limitaciones de ChuspaCalc - Versión Inicial (v1)
 
 # 
 
-##### A continuación, se detallan las limitaciones conocidas y esperadas de Escuadra en su versión inicial, así como algunas funcionalidades previstas para futuras versiones.
+##### A continuación, se detallan las limitaciones conocidas y esperadas de ChuspaCalc en su versión inicial, así como algunas funcionalidades previstas para futuras versiones.
 
 # 
 
@@ -14,7 +14,7 @@
 
 # 
 
-##### ¿Solución temporal? Sí. Los archivos deben exportarse o convertirse a formatos compatibles (PNG, JPG o SVG simple) antes de utilizarlos en Escuadra.
+##### ¿Solución temporal? Sí. Los archivos deben exportarse o convertirse a formatos compatibles (PNG, JPG o SVG simple) antes de utilizarlos en ChuspaCalc.
 
 ##### 
 
@@ -199,7 +199,7 @@
 
 # 5.6 Alcance educativo de fórmulas y procedimientos simplificados
 
-##### Descripción: Algunas herramientas implementadas en Escuadra tienen un propósito principalmente educativo y utilizan modelos simplificados. Los resultados obtenidos deben interpretarse como aproximaciones para aprendizaje, práctica académica o validaciones preliminares, y no sustituyen procedimientos profesionales, software especializado ni normativa técnica vigente.
+##### Descripción: Algunas herramientas implementadas en ChuspaCalc tienen un propósito principalmente educativo y utilizan modelos simplificados. Los resultados obtenidos deben interpretarse como aproximaciones para aprendizaje, práctica académica o validaciones preliminares, y no sustituyen procedimientos profesionales, software especializado ni normativa técnica vigente.
 
 ##### Simplificación de mapas de Karnaugh
 

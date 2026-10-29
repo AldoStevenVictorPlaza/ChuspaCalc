@@ -21,7 +21,7 @@ test:
 	pytest
 
 test-cov:
-	pytest --cov=src/escuadra tests/
+	pytest --cov=src/ChuspaCalc tests/
 
 lint:
 	ruff check .
@@ -33,7 +33,7 @@ build:
 	python -m build
 
 run:
-	python -m escuadra
+	python -m ChuspaCalc
 
 clean:
 	find . -type d -name "__pycache__" -exec rm -rf {} +

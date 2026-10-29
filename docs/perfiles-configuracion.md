@@ -1,6 +1,6 @@
 # ⚙️ Configuración de la aplicación
 
-Este documento describe el estado actual del sistema de configuración en Escuadra.
+Este documento describe el estado actual del sistema de configuración en ChuspaCalc.
 
 ---
 
@@ -18,9 +18,9 @@ La configuración se almacena en un archivo llamado `config.yaml` ubicado en el 
 
 | Sistema operativo | Ruta del archivo |
 |-------------------|------------------|
-| **Windows** | `%APPDATA%/Escuadra/config.yaml` |
-| **Linux** | `~/.config/escuadra/config.yaml` |
-| **macOS** | `~/Library/Application Support/Escuadra/config.yaml` |
+| **Windows** | `%APPDATA%/ChuspaCalc/config.yaml` |
+| **Linux** | `~/.config/ChuspaCalc/config.yaml` |
+| **macOS** | `~/Library/Application Support/ChuspaCalc/config.yaml` |
 
 ---
 

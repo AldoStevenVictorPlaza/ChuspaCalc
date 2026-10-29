@@ -4,7 +4,7 @@ Este documento describe las herramientas actualmente disponibles en la suite Chu
 
 Las herramientas listadas corresponden a clases que implementan la interfaz base
 `Herramienta` y que son descubiertas correctamente por el sistema de registro
-(`escuadra.core.registry`).
+(`ChuspaCalc.core.registry`).
 
 ## Herramientas disponibles
 

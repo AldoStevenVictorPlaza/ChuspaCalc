@@ -33,3 +33,36 @@ def resistencia_paralelo(*resistencias):
     suma_inversas = sum(1 / r for r in resistencias)
 
     return float(1 / suma_inversas)
+
+
+
+def capacitancia_paralelo(*capacitancias):
+    """
+    Calcula la capacitancia equivalente en paralelo.
+
+    Fórmula:
+        C_eq = C1 + C2 + ... + Cn
+    """
+    if len(capacitancias) < 2:
+        raise ValueError("Se requieren al menos 2 capacitancias")
+
+    if any(c <= 0 for c in capacitancias):
+        raise ValueError("Todas las capacitancias deben ser mayores que 0")
+
+    return float(sum(capacitancias))
+
+
+def capacitancia_serie(*capacitancias):
+    """
+    Calcula la capacitancia equivalente en serie.
+
+    Fórmula:
+        1 / C_eq = 1/C1 + 1/C2 + ... + 1/Cn
+    """
+    if len(capacitancias) < 2:
+        raise ValueError("Se requieren al menos 2 capacitancias")
+
+    if any(c <= 0 for c in capacitancias):
+        raise ValueError("Todas las capacitancias deben ser mayores que 0")
+
+    return float(1.0 / sum(1.0 / c for c in capacitancias))

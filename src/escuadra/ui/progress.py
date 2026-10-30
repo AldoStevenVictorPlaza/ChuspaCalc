@@ -1,5 +1,5 @@
 """
-Módulo de indicador de progreso para el CLI de Escuadra.
+Módulo de indicador de progreso para el CLI de ChuspaCalc.
 """
 
 import time

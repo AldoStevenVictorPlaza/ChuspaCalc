@@ -44,7 +44,7 @@ Instalar:
 
 Desinstalar:
 
-    sudo dpkg -r ChuspaCalc
+    sudo dpkg -r chuspacalc
 
 ## Comparacion de formatos
 

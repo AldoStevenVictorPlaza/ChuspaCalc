@@ -2,7 +2,7 @@
 Modo interactivo (REPL) para ChuspaCalc CLI
 """
 
-from ChuspaCalc.registry import obtener_herramientas
+from chuspacalc.registry import obtener_herramientas
 
 
 def ejecutar_interactivo():

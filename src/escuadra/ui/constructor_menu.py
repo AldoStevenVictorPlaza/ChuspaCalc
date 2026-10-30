@@ -6,9 +6,9 @@ Conecta el registry de herramientas con los menús de la ventana principal.
 from PySide6.QtGui import QAction
 from PySide6.QtWidgets import QMenu
 
-from ChuspaCalc.core.carrera import Carrera
-from ChuspaCalc.core.herramienta import Herramienta
-from ChuspaCalc.ui.ventana_principal import VentanaPrincipal
+from chuspacalc.core.carrera import Carrera
+from chuspacalc.core.herramienta import Herramienta
+from chuspacalc.ui.ventana_principal import VentanaPrincipal
 
 
 def construir_menu(

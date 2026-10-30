@@ -13,7 +13,7 @@ DEFAULT_FONT_SCALE = 1.0
 
 def _get_config_dir() -> Path:
     """Retorna el directorio de configuración del usuario."""
-    config_dir = Path.home() / ".config" / "ChuspaCalc"
+    config_dir = Path.home() / ".config" / "chuspacalc"
     config_dir.mkdir(parents=True, exist_ok=True)
     return config_dir
 

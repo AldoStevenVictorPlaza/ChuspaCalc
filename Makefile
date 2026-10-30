@@ -16,12 +16,12 @@ help:
 install:
 	pip install -e ".[dev]"
 	pre-commit install
-	
+
 test:
 	pytest
 
 test-cov:
-	pytest --cov=src/ChuspaCalc tests/
+	pytest --cov=src/chuspacalc tests/
 
 lint:
 	ruff check .
@@ -33,7 +33,7 @@ build:
 	python -m build
 
 run:
-	python -m ChuspaCalc
+	python -m chuspacalc
 
 clean:
 	find . -type d -name "__pycache__" -exec rm -rf {} +

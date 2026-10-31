@@ -3,7 +3,7 @@
 Implementa conversiones entre Celsius, Fahrenheit y Kelvin.
 """
 
-from chuspacalc .modulos.matematicas.error_validacion import ErrorValidacion
+from chuspacalc.modulos.matematicas.error_validacion import ErrorValidacion
 
 
 def celsius_a_fahrenheit(c):

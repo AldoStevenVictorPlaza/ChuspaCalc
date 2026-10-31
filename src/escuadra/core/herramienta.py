@@ -6,7 +6,7 @@ from abc import ABC, abstractmethod
 
 from PySide6.QtWidgets import QWidget
 
-from escuadra.core.carrera import Carrera
+from chuspacalc.core.carrera import Carrera
 
 
 class Herramienta(ABC):

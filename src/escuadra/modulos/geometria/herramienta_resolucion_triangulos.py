@@ -11,9 +11,9 @@ from PySide6.QtWidgets import (
     QWidget,
 )
 
-from ChuspaCalc.core.carrera import Carrera
-from ChuspaCalc.core.herramienta import Herramienta
-from ChuspaCalc.modulos.geometria.resolucion_triangulos import (
+from chuspacalc.core.carrera import Carrera
+from chuspacalc.core.herramienta import Herramienta
+from chuspacalc.modulos.geometria.resolucion_triangulos import (
     resolver_triangulo_lado_angulo,
     resolver_triangulo_lados,
 )

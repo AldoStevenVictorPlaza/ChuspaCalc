@@ -1,5 +1,5 @@
-import escuadra.core.carrera as carrera
-import escuadra.modulos.geometria.calculo_area as calculo_area
+import chuspacalc.core.carrera as carrera
+import chuspacalc.modulos.geometria.calculo_area as calculo_area
 
 from PySide6.QtCore import Qt
 
@@ -19,7 +19,7 @@ if not hasattr(calculo_area, "area_trapecio"):
     calculo_area.area_trapecio = area_trapecio
 
 
-from escuadra.modulos.geometria.herramienta_calculo_area import (
+from chuspacalc.modulos.geometria.herramienta_calculo_area import (
     HerramientaCalculoArea,
 )
 

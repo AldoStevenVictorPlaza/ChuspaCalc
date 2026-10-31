@@ -1,6 +1,6 @@
 import pytest
 
-from escuadra.math.matrix import multiplicar, restar, sumar
+from chuspacalc.math.matrix import multiplicar, restar, sumar
 
 
 def test_sumar_matrices():

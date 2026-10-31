@@ -1,4 +1,4 @@
-from ChuspaCalc.modulos.matematicas.error_validacion import ErrorValidacion
+from chuspacalc.modulos.matematicas.error_validacion import ErrorValidacion
 
 
 def convertir_masa(valor, unidad_origen, unidad_destino):
